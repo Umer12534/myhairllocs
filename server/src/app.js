@@ -1,17 +1,17 @@
 const express = require('express');
-const multer = require('multer');
-const productsModel = require('./models/product.model');
-const cors = require('cors');
+const authRouters = require('./routes/auth.routes');
 
 const app = express();
-
-app.use(cors());
 app.use(express.json());
 
-const upload = multer({storage: multer.memoryStorage() })
+app.use("/api/auth", authRouters)
 
-app.post('/', (req, res)=>{
-    console.log("test server");
-    
-})
+
+// app.post("/test", (req, res) => {
+//     const { name } = req.body;
+//     res.json({ message: `Hello, ${name}!` });
+// })
+
+
+
 module.exports = app;
