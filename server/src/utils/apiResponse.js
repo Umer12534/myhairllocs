@@ -1,0 +1,1 @@
+// standard success response shape

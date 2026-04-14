@@ -1,0 +1,1 @@
+// custom error class with status codes

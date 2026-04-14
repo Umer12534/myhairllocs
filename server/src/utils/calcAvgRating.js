@@ -1,0 +1,1 @@
+// recalculates product rating after review
